@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-X = df.iloc[:, :-1].values  
-Y = df.iloc[:, -1].values
 from sklearn.model_selection import LinearRegression
 df = pd.read_csv("data.csv")
+X = df.iloc[:, :-1].values  # features
+Y = df.iloc[:, -1].values
 X = df[['hours studied']]
 y = df['examscore']
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2,state=42)
