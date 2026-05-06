@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn.model_selection import LinearRegression
-df = pd.read_csv("data.csv")
+df = pd.read_csv("students_scores.csv")
 X = df.iloc[:, :-1].values  # features
 Y = df.iloc[:, -1].values
 X = df[['hours studied']]
