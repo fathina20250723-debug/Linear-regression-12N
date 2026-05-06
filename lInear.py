@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.linear_model import train_test_split
 from sklearn.model_selection import LinearRegression
 df = pd.read_csv("students_scores.csv")
 X = df[['hours studied']]
